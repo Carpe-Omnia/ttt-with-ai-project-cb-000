@@ -8,24 +8,26 @@ human_player = nil
 cpu = nil
 game = nil
 players = gets.chomp.to_i
-if players == 1
-  while goes_first != "C" && goes_first != "P"
-    puts "who goes first? C for computer, P for player"
-    goes_first = gets.chomp.to_upper
-  end
-  puts "The player who goes first will play X btw"
-  if goes_first == "C"
-    human_player = Players::Human.new("X")
-    cpu == Players::Computer.new('O')
-    puts "You go first"
-    game = Game.new(human_player, cpu)
-    game.play
-  else
-    human_player = Players::Human.new("O")
-    cpu == Players::Computer.new('X')
-    puts "You go second"
-    game = Game.new(cpu, human_player)
-    game.play 
-  end
-
-end
+  def lonely_game 
+    while goes_first != "C" && goes_first != "P"
+      puts "who goes first? C for computer, P for player"
+      goes_first = gets.chomp.to_upper
+    end
+    puts "The player who goes first will play X btw"
+    if goes_first == "C"
+      human_player = Players::Human.new("X")
+      cpu == Players::Computer.new('O')
+      puts "You go first"
+      game = Game.new(human_player, cpu)
+      game.play
+    else
+      human_player = Players::Human.new("O")
+      cpu == Players::Computer.new('X')
+      puts "You go second"
+      game = Game.new(cpu, human_player)
+      game.play
+    end
+  end 
+if players == 1 
+  lonely_game 
+end   
