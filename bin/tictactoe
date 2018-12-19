@@ -6,6 +6,7 @@ puts "how many players?"
 goes_first = nil
 human_player = nil
 cpu = nil
+game = nil
 players = gets.chomp.to_i
 if players == 1
   while goes_first != "C" && goes_first != "P"
@@ -22,5 +23,5 @@ if players == 1
     cpu == Players::Computer.new('X')
     puts "You go second"
   end
+  
 end
-
