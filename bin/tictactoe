@@ -21,7 +21,7 @@ def lonely_game
   puts "The player who goes first will play X btw"
   if goes_first == "P"
     human_player = Players::Human.new("X")
-    cpu == Players::Computer.new('O')
+    cpu = Players::Computer.new('O')
     puts "You go first"
     game = Game.new(human_player, cpu)
     game.play
