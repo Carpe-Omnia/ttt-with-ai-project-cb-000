@@ -19,7 +19,7 @@ def lonely_game
     goes_first = gets.chomp.upcase
   end
   puts "The player who goes first will play X btw"
-  if goes_first == "C"
+  if goes_first == "P"
     human_player = Players::Human.new("X")
     cpu == Players::Computer.new('O')
     puts "You go first"
