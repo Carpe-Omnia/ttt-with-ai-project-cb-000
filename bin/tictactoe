@@ -19,11 +19,13 @@ if players == 1
     cpu == Players::Computer.new('O')
     puts "You go first"
     game = Game.new(human_player, cpu)
+    game.play
   else
     human_player = Players::Human.new("O")
     cpu == Players::Computer.new('X')
     puts "You go second"
     game = Game.new(cpu, human_player)
+    game.play 
   end
 
 end
