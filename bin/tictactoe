@@ -13,6 +13,7 @@ while players != 0 && players != 1 && players != 2
 end
 
 def lonely_game
+  goes_first = "Z"
   while goes_first != "C" && goes_first != "P"
     puts "who goes first? C for computer, P for player"
     goes_first = gets.chomp.to_upper
