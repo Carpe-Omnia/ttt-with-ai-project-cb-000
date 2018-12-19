@@ -2,7 +2,7 @@
 
 require_relative '../config/environment'
 puts "yo what up?"
-puts "how many players?"
+puts "how many players? (0/1/2)"
 goes_first = nil
 human_player = nil
 cpu = nil
@@ -10,7 +10,7 @@ game = nil
 players = 3
 while players != 0 && players != 1 && players != 2
   players = gets.chomp.to_i
-end   
+end
 def lonely_game
   while goes_first != "C" && goes_first != "P"
     puts "who goes first? C for computer, P for player"
