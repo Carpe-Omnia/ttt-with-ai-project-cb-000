@@ -11,7 +11,13 @@ if players == 1
   while goes_first != "C" && goes_first != "P"
     puts "who goes first? C for computer, P for player"
     goes_first = gets.chomp.to_upper
-  end 
+  end
   puts "The player who goes first will play X btw"
-  if goes_first == 
+  if goes_first == "C"
+    human_player = Players::Human.new("X")
+    cpu == Players::Computer.new('O')
+  else 
+    human_player = Players::Human.new("O")
+    cpu == Players::Computer.new('X')  
+  end   
 end
