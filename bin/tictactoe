@@ -64,7 +64,6 @@ if players == 2
     puts "1 to play again, 0 to stop"
     play_again = gets.chomp.to_i
   end
-end     
+end
 
 Puts "Good games. See ya later"
-
