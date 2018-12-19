@@ -16,8 +16,11 @@ if players == 1
   if goes_first == "C"
     human_player = Players::Human.new("X")
     cpu == Players::Computer.new('O')
-  else 
+    puts "You go first"
+  else
     human_player = Players::Human.new("O")
-    cpu == Players::Computer.new('X')  
-  end   
+    cpu == Players::Computer.new('X')
+    puts "You go second"
+  end
 end
+
