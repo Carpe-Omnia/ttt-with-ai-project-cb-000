@@ -5,10 +5,13 @@ module Players
     def move(board)
       spot = 1
       index = 0
-      board.cells.each do |cell|
-        index += 1
-        if cell == " "
-          spot = "#{index}"
+      if board[4] == " "
+      else
+        board.cells.each do |cell|
+          index += 1
+          if cell == " "
+            spot = "#{index}"
+          end
         end
       end
       return spot
