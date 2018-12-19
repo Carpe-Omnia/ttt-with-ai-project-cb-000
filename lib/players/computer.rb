@@ -6,7 +6,7 @@ module Players
       spot = 1
       index = 0
       if board.cells[4] == " "
-        spot = 5
+        spot = "5"
       else
         board.cells.each do |cell|
           index += 1
