@@ -60,11 +60,11 @@ if players == 2
     p1 = Players::Human.new("X")
     p2 = Players::Human.new("O")
     game = Game.new(p1, p2)
-    game.play 
+    game.play
     puts "That was fun. go again?"
     puts "1 to play again, 0 to stop"
     play_again = gets.chomp.to_i
   end
 end
 
-Puts "Good games. See ya later"
+puts "Good games. See ya later"
