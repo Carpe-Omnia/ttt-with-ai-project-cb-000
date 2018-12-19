@@ -3,4 +3,14 @@
 require_relative '../config/environment'
 puts "yo what up?"
 puts "how many players?"
-players = gets.chomp 
+goes_first = nil
+human_player = nil 
+CPU = nil 
+players = gets.chomp.to_i
+if players == 1
+  puts "who goes first? C for computer, P for player"
+  goes_first = gets.chomp 
+  puts "The player who goes first will play X btw"
+end 
+  
+  
