@@ -7,7 +7,10 @@ goes_first = nil
 human_player = nil
 cpu = nil
 game = nil
-players = gets.chomp.to_i
+players = 3
+while players != 0 && players != 1 && players != 2
+  players = gets.chomp.to_i
+end   
 def lonely_game
   while goes_first != "C" && goes_first != "P"
     puts "who goes first? C for computer, P for player"
@@ -45,11 +48,12 @@ if players == 0
     cpu1 = Players::Computer.new("X")
     cpu2 = Players::Computer.new("0")
     game = Game.new(cpu1, cpu2)
-    game.play 
+    game.play
     puts "That was fun. go again?"
     puts "1 to play again, 0 to stop"
     play_again = gets.chomp.to_i
-  end 
-end     
-    
+  end
+end
 
+if players == 2
+  
