@@ -11,6 +11,7 @@ players = 3
 while players != 0 && players != 1 && players != 2
   players = gets.chomp.to_i
 end
+
 def lonely_game
   while goes_first != "C" && goes_first != "P"
     puts "who goes first? C for computer, P for player"
