@@ -65,3 +65,6 @@ if players == 2
     play_again = gets.chomp.to_i
   end
 end     
+
+Puts "Good games. See ya later"
+
