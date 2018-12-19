@@ -16,7 +16,7 @@ def lonely_game
   goes_first = "Z"
   while goes_first != "C" && goes_first != "P"
     puts "who goes first? C for computer, P for player"
-    goes_first = gets.chomp.to_upper
+    goes_first = gets.chomp.upcase 
   end
   puts "The player who goes first will play X btw"
   if goes_first == "C"
