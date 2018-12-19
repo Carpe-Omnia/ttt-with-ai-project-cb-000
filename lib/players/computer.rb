@@ -5,7 +5,7 @@ module Players
     def move(board)
       spot = 1
       index = 0
-      if board[4] == " "
+      if board.cells[4] == " "
         spot = 5
       else
         board.cells.each do |cell|
