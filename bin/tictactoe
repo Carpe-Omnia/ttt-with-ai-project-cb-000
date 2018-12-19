@@ -28,6 +28,12 @@ players = gets.chomp.to_i
       game.play
     end
   end 
+play_again = 1
 if players == 1 
+  while play_again != 0
   lonely_game 
+  puts "That was fun. go again?"
+  puts "1 to play again, 0 to stop"
+  play_again = gets.chomp.to_i 
+  end 
 end   
